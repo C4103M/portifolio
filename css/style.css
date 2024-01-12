@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Ubuntu:wght@700&display=swap');
-@import url('/css/modal.css');
-@import url('/css/icones.css');
-@import url('/css/scroll.css');
-@import url('/css/header.css');
-@import url('/css/slide.css');
+@import url('/modal.css');
+@import url('/icones.css');
+@import url('/scroll.css');
+@import url('/header.css');
+@import url('/slide.css');
 * {
     margin: 0;
     padding: 0;
