@@ -1,0 +1,9 @@
+dialog {
+    width: 40%;
+    height: 50vh;
+    margin: auto;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    
+}

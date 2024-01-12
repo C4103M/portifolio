@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="/scroll.js" defer></script>
+        <title>Portifólio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav1">
+                <p><a href="" class="lnk">Home</a></p>
+                <p><a href="#ancora-sobre" class="lnk">Sobre</a></p>
+                <p><a href="#ancora-skill" class="lnk">Habilidades</a></p>
+                <p><a href="#ancora-projetos" class="lnk">Projetos</a></p>
+            </nav>
+            <nav class="nav-mobile">
+                <button type="button" id="menu" onclick="changeMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="navigation">
+                    <p><a href="" class="lnk">Home</a></p>
+                    <p><a href="#ancora-sobre" class="lnk">Sobre</a></p>
+                    <p><a href="#ancora-skill" class="lnk">Habilidades</a></p>
+                    <p><a href="#ancora-projetos" class="lnk">Projetos</a></p>
+                </div>
+            </nav>
+        </header>
+
+        <div class="fundo1"></div>
+        <div class="fundo2"></div>
+        <main>
+            <!-- SESSÃO INICIAL -->
+            <section class="inicio-sec">
+                <div class="inicio">
+                    <div class="sec">
+                        <div class="sec-foto scroll-efect">
+                            <img src="/img/foto-perfil.jpg" class="ft-perfil" />
+                        </div>
+                    </div>
+                    <div class="sec-texto scroll-efect">
+                        <h1>Caio Emanoel</h1>
+                        <h2>Desenvolvedor Web Full Stack</h2>
+                        <div>
+                            <button class="btn1" id="ic1">
+                                <img
+                                    src="/img/linkedin.svg"
+                                    alt=""
+                                    class="icons"
+                                />
+                            </button>
+                            <button class="btn1" id="ic2">
+                                <img src="/img/github.svg" class="icons" />
+                            </button>
+                            <button class="btn1" id="ic3">
+                                <img
+                                    src="/img/phone.svg"
+                                    alt=""
+                                    class="icons"
+                                />
+                            </button>
+                            <button class="btn1" id="ic4">
+                                <img
+                                    src="/img/instagram.svg"
+                                    alt=""
+                                    class="icons"
+                                />
+                            </button>
+                            <button class="btn1" id="ic5">
+                                <img
+                                    src="/img/whatsapp.svg"
+                                    alt=""
+                                    class="icons"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃo SOBRE -->
+            <section class="sobre" id="ancora-sobre">
+                <h1 class="t1">Sobre</h1>
+                <div class="cont-sobre">
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <img
+                                src="/img/foto-diploma.jpg"
+                                style="width: 100%"
+                                class="img-slide"
+                            />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img
+                                src="img/foto-formando.jpg"
+                                style="width: 100%"
+                                class="img-slide"
+                            />
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img
+                                src="img/foto-turma.jpg"
+                                style="width: 100%"
+                                class="img-slide"
+                            />
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div class="sobre-texto">
+                        <p>
+                            Sou Caio Emanoel Silva, um apaixonado por
+                            informática de 18 anos de idade. Graduado no curso
+                            técnico em informática para a internet no IFNMG -
+                            Campus Janaúba, busco constantemente desafios que
+                            impulsionassem meu crescimento e me permitissem
+                            explorar novas fronteiras. Meu portfólio reflete a
+                            diversidade e a profundidade das minhas habilidades.
+                            De projetos inovadores a soluções práticas, cada
+                            empreendimento representa uma oportunidade para
+                            aprender, evoluir e superar expectativas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SESSÃO HABILIDADES -->
+            <section class="sec-skill" id="ancora-skill">
+                <h1 class="t1">Habilidades</h1>
+                <button class="arrow-rigth" onclick="rigth()">
+                    <span class=""> > </span>
+                </button>
+                <button class="arrow-left" onclick="left()">
+                    <span class=""> < </span>
+                </button>
+                <div class="skills">
+                    <div class="elemento">
+                        <img src="/img/html.svg" alt="" class="img-elemento" />
+                        <h2 class="barra txt-elemento">HTML5</h2>
+                        <p>Linguagem de marcação de hipertexto</p>
+                    </div>
+                    <div class="elemento">
+                        <img src="/img/css.svg" alt="" class="img-elemento" />
+                        <h2 class="barra txt-elemento">CSS</h2>
+                        <p>Linguagem de formatação de elementos</p>
+                    </div>
+                    <div class="elemento">
+                        <img src="/img/js.svg" alt="" class="img-elemento" />
+                        <h2 class="barra txt-elemento">JavaScript</h2>
+                        <p>Linguagem de Programação</p>
+                    </div>
+                    <div class="elemento">
+                        <img src="/img/php.svg" class="img-elemento-xl" />
+                        <h2 class="barra txt-elemento-xl">PHP</h2>
+                        <p>Linguagem de Programação</p>
+                    </div>
+                </div>
+                <div class="skills2">
+                    <div class="elemento">
+                        <img
+                            src="/img/bootstrap.svg"
+                            alt=""
+                            class="img-elemento"
+                        />
+                        <h2 class="barra txt-elemento">Bootstrap</h2>
+                        <p>Framework web com código-fonte aberto para
+                            desenvolvimento de componentes de interface</p>
+                    </div>
+                    <div class="elemento">
+                        <img src="/img/git.svg" alt="" class="img-elemento" />
+                        <h2 class="barra txt-elemento">Git</h2>
+                        <p>
+                            Ferramenta de vesionamento de arquivos
+                        </p>
+                    </div>
+                    <div class="elemento">
+                        <img
+                            src="/img/sql.svg"
+                            alt=""
+                            class="img-elemento-sm"
+                        />
+                        <h2 class="barra txt-elemento">SQL</h2>
+                        <p>Banco de dados relacional</p>
+                    </div>
+                </div>
+                <div class="skills-mobile">
+                    <div class="projects">
+                        <div class="elemento-project" id="element1">
+                            <img
+                                src="/img/html.svg"
+                                alt=""
+                                class="img-elemento-project"
+                            />
+                            <h2 class="barra txt-elemento-project">HTML</h2>
+                            <p>
+                                Linguagem de marcação de hipertexto
+                            </p>
+                        </div>
+                        <div class="elemento-project">
+                            <img
+                                src="/img/css.svg"
+                                alt=""
+                                class="img-elemento-project"
+                            />
+                            <h2 class="barra txt-elemento-project">CSS</h2>
+                            <p>
+                                Linguagem de estilização
+                            </p>
+                            
+                        </div>
+                        <div class="elemento-project">
+                            <img
+                                src="/img/js.svg"
+                                alt=""
+                                class="img-elemento-project"
+                            />
+                            <h2 class="barra txt-elemento-project">JavaScript</h2>
+                            <p>Linguagem de Programação</p>
+                        </div>
+                        <div class="elemento-project">
+                            <img
+                                src="/img/php.svg"
+                                class="img-elemento-project"
+                            />
+                            <h2 class="barra txt-elemento-project">
+                                PHP
+                            </h2>
+                            <p>Linguagem de Programação</p>
+                        </div>
+                        <div class="elemento-project">
+                            <img
+                                src="/img/bootstrap.svg"
+                                class="img-elemento-project"
+                            />
+                            <h2 class="barra txt-elemento-project">
+                                Bootstrap
+                            </h2>
+                            <p>Framework web com código-fonte aberto para
+                                desenvolvimento de componentes de interface
+                            </p>
+                        </div>
+                        <div class="elemento-project">
+                            <img
+                                src="/img/sql.svg"
+                                class="img-elemento-project"
+                            />
+                            <h2 class="barra txt-elemento-project">
+                                SQL
+                            </h2>
+                            <p>Banco de dados Relacional
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SESSÃO PROJETOS -->
+            <section class="sec-projects" id="ancora-projetos">
+                <h1 class="t1">Projetos</h1>
+                <div class="projects">
+                    <div class="elemento-project" id="element1">
+                        <img
+                            src="/img/brain.svg"
+                            alt=""
+                            class="img-elemento-project"
+                        />
+                        <h2 class="barra txt-elemento-project">Quiz Info +</h2>
+                        <p>
+                            Quiz relacionado à informática, aplicado dentro do
+                            IFNMG - Janaúba
+                        </p>
+                        <button id="ic6" class="btn3">
+                            <img
+                                src="/img/olho.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                        <button id="ic7" class="btn2">
+                            <img
+                                src="/img/github.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                    </div>
+                    <div class="elemento-project">
+                        <img
+                            src="/img/redesocial.png"
+                            alt=""
+                            class="img-elemento-project"
+                        />
+                        <h2 class="barra txt-elemento-project">Rede Social</h2>
+                        <p>
+                            Rede Social com diversas opções e interações entre
+                            usuários
+                        </p>
+                        <button id="ic8" class="btn3">
+                            <img
+                                src="/img/olho.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                        <button id="ic9" class="btn2">
+                            <img
+                                src="/img/github.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                    </div>
+                    <div class="elemento-project">
+                        <img
+                            src="/img/loja.png"
+                            alt=""
+                            class="img-elemento-project"
+                        />
+                        <h2 class="barra txt-elemento-project">Projeto Loja</h2>
+                        <p>Esbolço inicial de uma loja online</p>
+                        <button id="ic10" class="btn3">
+                            <img
+                                src="/img/olho.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                        <button id="ic11" class="btn2">
+                            <img
+                                src="/img/github.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                    </div>
+                    <div class="elemento-project">
+                        <img
+                            src="/img/landingpage.svg"
+                            class="img-elemento-project"
+                        />
+                        <h2 class="barra txt-elemento-project">
+                            Guardiões da Galáxia
+                        </h2>
+                        <p>Landing Page sobre Guardiões da Galáxia</p>
+                        <button id="ic12" class="btn3">
+                            <img
+                                src="/img/olho.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                        <button id="ic13" class="btn2">
+                            <img
+                                src="/img/github.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                    </div>
+                    <div class="elemento-project">
+                        <img
+                            src="/img/1600953.png"
+                            class="img-elemento-project"
+                        />
+                        <h2 class="barra txt-elemento-project">
+                            Harry Potter Blog
+                        </h2>
+                        <p>Blog com notícias do mundo de Harry Potter</p>
+                        <button id="ic14" class="btn3">
+                            <img
+                                src="/img/olho.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                        <button id="ic15" class="btn2">
+                            <img
+                                src="/img/github.svg"
+                                class="icons ic-projects"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <dialog>fdfd</dialog>
+
+        <script src="/index.js"></script>
+    </body>
+</html>

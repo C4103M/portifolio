@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Ubuntu:wght@700&display=swap');
+@import url('/css/modal.css');
+@import url('/css/icones.css');
+@import url('/css/scroll.css');
+@import url('/css/header.css');
+@import url('/css/slide.css');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+.inicio-sec {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio {
+    width: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.sec-texto {
+    /* position: absolute; */
+    /* right: 20%; */
+    /* top: 35%; */
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fundo1 {
+    width: 100%;
+    height: 100vh;
+    clip-path: polygon(0 0, 22% 0, 56% 100%, 0% 100%);
+    background-color: #0D1F2D;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+}
+.fundo2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #546A7B;
+    position: absolute;
+    z-index: -2;
+    
+}
+.sec-foto {
+    width: 300px;
+    height: 300px;
+    margin-left: 30%;
+
+}
+.ft-perfil {
+    width: 100%;
+}
+
+
+h2 {
+    color: #D3D5D4;
+}
+
+
+.sec-skill {
+    position: relative;
+    background-color: #546A7B;
+    width: 100%;
+    height: 100vh;
+
+}
+.t1 {
+    text-align: center;
+    font-size: 3.5rem;
+    transform: translateY(100px);
+    color: #D3D5D4;
+}
+.skills {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 1s;
+    position: relative;
+    left: 0;
+}
+.skills2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    transition: all 1s;
+}
+
+.elemento {
+    /* border: 1px solid black; */
+    width: 15%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+
+.txt-elemento {
+    text-align: center;
+    margin-top: 20px;
+}
+.img-elemento {
+    width: 80%;
+    margin: 0 auto;
+}
+.img-elemento-xl  {
+    width: 100%;
+}
+.img-elemento-sm {
+    margin: 0 auto;
+    width: 60%;
+}
+.txt-elemento-xl {
+    text-align: center;
+    margin-top: 115px;
+}
+.elemento:hover {
+    transform: scale(1.1);
+}
+.elemento p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.1rem;
+
+}
+
+.arrow-rigth {
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 3rem;
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    transition: all 0.4s;
+    z-index: 10;
+
+}
+.arrow-left {
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 3rem;
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    transition: all 0.4s;
+    z-index: 10;
+
+    opacity: 0.3;
+
+}
+
+.arrow-rigth:hover, .arrow-left:hover {
+    transform: scale(1.1);
+}
+.sec-projects {
+    width: 100%;
+    height: 100vh;
+    background-color: #0D1F2D;
+}
+.projects {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    transition: all 1s;
+    position: relative;
+    left: 0;
+    margin-top: 100px;
+
+}
+
+
+.elemento-project {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    border: 1px solid #D3D5D4;
+    border-radius: 20px;
+    position: relative;
+}
+
+.img-elemento-project {
+    width: 70px;
+    height: 70px;
+    margin: auto 30px auto 20px;
+}
+
+.txt-elemento-project {
+    margin:auto 20px;
+    width: 15%;
+}
+
+.elemento-project p {
+    color: #d3d5d477;
+    margin: auto 10px;
+    width: 25%;
+}
+
+.btn2 {
+    width: 40px;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s;
+    padding: auto;
+    
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+.btn3 {
+    width: 40px;
+    height: 40px;
+    border: 1px black solid;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s;
+    padding: auto;
+    
+    position: absolute;
+    right: 90px;
+    top: 30px;
+}
+
+
+.sobre {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d1f2de7;
+    position: relative;
+
+}
+.sobre-texto {
+    position: absolute;
+    color: #D3D5D4;
+    width: 40%;
+    text-align: justify;
+    font-size: 1.4rem;
+    right: 25%;
+    top: 300px;
+    line-height: 30px;
+}
+.skills-mobile {
+    display: none;
+
+}
+.elemento-mobile {
+    width: 280px;
+    margin: auto;
+    float: left;
+}
+@media (max-width:1024px) {
+    .inicio {
+        flex-direction: column;
+    }
+    .sec-texto {
+        width: 300px;
+        position: relative;
+        top: -150px;
+    }
+    .sec-foto {
+        margin: 0;
+    }
+    nav p{
+        margin: 10px;
+    }
+}
+@media (max-width:425px) {
+    .sobre {
+        min-height: 150vh;
+        height: auto;
+    }
+    .sobre-texto {
+        position: relative;
+        width: 300px;
+        right: 0;
+        top: 0;
+        font-size: 1.2rem;
+        line-height: 20px;
+        margin: auto;
+        visibility: visible;
+    }
+    .slideshow-container {
+        margin: 100px auto 10px auto;
+    }
+    .t1 {
+        position: relative;
+        top: -50px;
+    }
+    .img-elemento-project {
+        margin: auto 10px;
+    }
+    .txt-elemento-project {
+        width: 100px;
+        transform: scale(0.8);
+    }   
+    .elemento-project {
+        width: 90%;
+    }
+    .elemento-project p {
+        display: none;
+    }
+    .btn2, .btn3 {
+        position: static;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+    }
+    .sobre-texto p {
+        margin: 30px auto;
+    }
+    .skills, .skills2, .arrow-left, .arrow-rigth {
+        display: none;
+    }
+    .skills-mobile {
+        display: block;
+    }
+
+}
